@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>Latennte</title>
+    {% block css %}
+        <link rel="stylesheet" href="{{ get_url(path="style.css") | safe }}">
+    {% endblock css %}
+</head>
+
+<body>
+    <header>
+        <a href="/index.html">Late<span>nn</span>te</a>
+    </header>
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    <footer>
+        {% block footer %} {% endblock %}
+    </footer>
+    <!-- <section class="section">
+        <div class="container">
+        
+        </div>
+    </section> -->
+</body>
+
+</html>
