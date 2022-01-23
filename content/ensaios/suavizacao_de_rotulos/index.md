@@ -1,7 +1,8 @@
 +++
+template = "ensaio.html"
 title = "Suavização de rótulos"
 date = 2021-09-15
-template = "ensaio.html"
+updated = 2022-01-23
 +++
 
 <!-- 
@@ -28,7 +29,7 @@ O label-smoothing, ou suavização dos rótulos, é uma técnica de regularizaç
 
 ## Explicação intuitiva
 
-Durante o treinamento de modelos para tarefas de classificação é comum que os dados utilizados tenham o label ( \\( y \\) ) da classe a qual pertencem, sendo \\( y \in \{0, 1\} \\) para classificação binária ou no formato de um vetor *one-hot encoding* para classificação em uma dentre múltiplas classes. Esse modo de representação contém, além da classe, a confiança sobre aquele rótulo - "Eu tenho **certeza** que é A ( \\( y=1 \\) )" ou "Eu tenho **certeza** que <u>não</u> é A ( \\( y=0 \\) )". Logo, além da classe correta, fornecemos durante o treinamento a informação de absoluta certeza ou de nenhuma incerteza.
+Durante o treinamento de modelos para tarefas de classificação é comum que os dados utilizados tenham o label ($y$) da classe a qual pertencem, sendo $ y \in \\{0, 1\\} $ para classificação binária ou no formato de um vetor *one-hot encoding* para classificação em uma dentre múltiplas classes. Esse modo de representação contém, além da classe, a confiança sobre aquele rótulo - "Eu tenho **certeza** que é A ( \\( y=1 \\) )" ou "Eu tenho **certeza** que <u>não</u> é A ( \\( y=0 \\) )". Logo, além da classe correta, fornecemos durante o treinamento a informação de absoluta certeza ou de nenhuma incerteza.
 
 Consequentemente, podemos reduzir possíveis excessos de confiança do modelo através dos rótulos. Para fazermos isso, o que anteriormente era certeza passa a conter uma leve incerteza - "Eu estou **quase certo** que é A ( \\( y=0.9 \\) )" ou "Eu estou **quase certo** que <u>não</u> é A ( \\( y=0.1 \\) )". Isso é a suavização dos rótulos ou *label smoothing*! Esse tipo de representação dos rótulos é chamada de *soft* (*softlabel*), enquanto a tradicional, apenas com 0s e 1s, é a *hard*.
 
@@ -42,6 +43,9 @@ Destilação
 
 Aplicação em ranqueamento
 
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+\\[ y \in \\{0, 1\\} \\]
 
 
 **side note** No livro *Deep Learning* (Goodfellow, Courville, Bengio) dizem que a técnica de suavização dos rótulos 

@@ -1,19 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+    <div id="meta">
+        <div>Criado em: {{ page.date }}</div>
+        <div>Atualizado em: {{ page.updated }}</div>
+        <div>Incerteza: {{ page.updated }}</div>
+        <div>Estado: {{ page.updated }}</div>
+    </div>
+
     <h1 class="title">{{ page.title }}</h1>
-    <p class="subtitle"><strong>{{ page.date }}</strong></p>
+    <!-- <p class="subtitle"><strong>{{ page.date }}</strong></p> -->
+
     {{ page.content | safe }}
 {% endblock content %}
 
 {% block footer %}
-    <div>
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-            <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
-        </a>
-        <br />
-        <span id="license-desc">
-            Licença do material <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional</a>.
-        </span>
-    </div>
+    {% include "cc-footer.html" %}
 {% endblock footer %}
