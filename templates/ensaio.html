@@ -2,12 +2,7 @@
 
 {% block content %}
 
-    <div id="meta">
-        <div>Criado em: {{ page.date }}</div>
-        <div>Atualizado em: {{ page.updated }}</div>
-        <div>Incerteza: {{ page.updated }}</div>
-        <div>Estado: {{ page.updated }}</div>
-    </div>
+    {% include "ensaio-meta.html" %}
 
     <h1 class="title">{{ page.title }}</h1>
     <!-- <p class="subtitle"><strong>{{ page.date }}</strong></p> -->

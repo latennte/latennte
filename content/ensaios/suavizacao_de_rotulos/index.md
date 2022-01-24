@@ -3,6 +3,9 @@ template = "ensaio.html"
 title = "Suavização de rótulos"
 date = 2021-09-15
 updated = 2022-01-23
+[extra]
+status = "em progresso"
+uncertainty = "baixa"
 +++
 
 <!-- 
@@ -21,7 +24,7 @@ updated = 2022-01-23
 
 ## Motivação
 
-Redes neurais artificiais profundas são modelos com uma enorme **capacidade** de expressar relações existentes nos dados. Ao mesmo tempo que isso confere poder e as tornam úteis para as mais variadas e complexas tarefas, parte dessas relações podem ser apenas "ruídos". Em outras palavras, coincidências podem ser confundidas pelos modelos como sendo relações verdadeiras, o que acaba sendo algo comum principalmente quando o conjunto de dados é pequeno ou a amostragem tem vieses ocultos significativos. A consequência mais direta desse tipo de problema é identificada na forma de sobreajuste (*overfitting*). No entanto, há consequências mais sutis como o **excesso de confiança** do modelo (*overconfidence*).
+Redes neurais artificiais profundas são modelos com uma enorme **capacidade** de expressar relações existentes nos dados. Ao mesmo tempo que isso confere poder e as tornam úteis para as mais variadas e complexas tarefas, parte dessas relações podem ser apenas "ruídos". Em outras palavras, coincidências podem ser confundidas pelos modelos como sendo relações verdadeiras, o que acaba sendo algo comum principalmente quando o conjunto de dados é pequeno ou a amostragem tem vieses ocultos significativos. <aside>Observação</aside> A consequência mais direta desse tipo de problema é identificada na forma de sobreajuste (*overfitting*). No entanto, há consequências mais sutis como o **excesso de confiança** do modelo (*overconfidence*).
 
 O <u>excesso</u> de confiança está relacionado a uma estimativa ruim da **incerteza** do resultado. Um bom modelo, não é apenas o que erra pouco durante os testes, mas aquele que diz o quão certo ou incerto ele está sobre aquele resultado. :calibração:
 
@@ -48,4 +51,4 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 \\[ y \in \\{0, 1\\} \\]
 
 
-**side note** No livro *Deep Learning* (Goodfellow, Courville, Bengio) dizem que a técnica de suavização dos rótulos 
+<aside>No livro *Deep Learning* (Goodfellow, Courville, Bengio) dizem que a técnica de suavização dos rótulos.</aside>
