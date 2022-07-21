@@ -12,7 +12,10 @@
 {% set section = get_section(path="ensaios/_index.md") %}
 <ul>
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  	<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+	{% if page.description %}
+	    <p>{{ page.description }}</p>
+	{% endif %}
   {% endfor %}
 </ul>
 

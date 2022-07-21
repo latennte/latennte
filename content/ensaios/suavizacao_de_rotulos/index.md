@@ -3,6 +3,7 @@ template = "ensaio.html"
 title = "Suavização de rótulos"
 date = 2021-09-15
 updated = 2022-03-15
+description = "Seu modelo está errando por excesso de confiança? Suavizar os rótulos pode ajudar."
 [extra]
 status = "em progresso"
 uncertainty = "baixa"
