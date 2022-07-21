@@ -1,7 +1,6 @@
 +++
 template = "ensaio.html"
 title = "Suavização de rótulos"
-description = "A suavização de rótulos é uma técnica de regularização que atua controlando a tendência ao excesso de confiança observado em redes neurais profundas."  
 date = 2021-09-15
 updated = 2022-03-15
 description = "Seu modelo está errando por excesso de confiança? Suavizar os rótulos pode ajudar."

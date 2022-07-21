@@ -1,6 +1,7 @@
 +++
-title = "My second post"
-date = 2019-11-28
+template = "ensaio.html"
+title = "Segunda postagem"
+date = 1984-04-09
 +++
 
-This is my second blog post.
+This is my first blog post.

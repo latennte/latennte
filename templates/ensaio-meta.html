@@ -1,6 +1,6 @@
 <div id="meta">
     <div>Criado em: {{ page.date }}</div>
-    <div>Atualizado em: {{ page.updated }}</div>
-    <div>Incerteza: {{ page.extra.uncertainty | safe }}</div>
-    <div>Estado: {{ page.extra.status | safe }}</div>
+    {% if page.updated %}<div>Atualizado em: {{ page.updated }}</div>{% endif %}
+    {% if page.updated %}<div>Incerteza: {{ page.extra.uncertainty | safe }}</div>{% endif %}
+    {% if page.updated %}<div>Estado: {{ page.extra.status | safe }}</div>{% endif %}
 </div>

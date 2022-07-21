@@ -122,10 +122,14 @@ body {
         line-height: 0.8rem;
     }
 
+    .page-title {
+        width: 80%;
+    }
+
     #meta {
         float: right;
         position: relative;
-        top: 3rem;
+        // top: 1rem;
         padding: 5px;
         /* background-color: rgb(0, 0, 0); */
         border-right:  2px solid rgb(0, 0, 0);
@@ -134,6 +138,11 @@ body {
         font-size: 0.618rem;
         line-height: 0.8rem;
         text-align: right;
+    }
+
+    .list-item {
+        border-right:  1px solid rgb(0, 0, 0);
+        border-bottom:  2px solid rgb(0, 0, 0);
     }
 }
 
