@@ -2,12 +2,15 @@
 
 {% block content %}
 <h1 class="title">
-  {{ section.title }}
+    {{ section.title }}
 </h1>
 <ul>
-  {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-  {% endfor %}
+    {% for page in section.pages %}
+        <li>
+            <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a> [ {{ page.updated }} ]</h3>
+            <p>{{ page.description }}</p>
+        </li>
+    {% endfor %}
 </ul>
 {% endblock content %}
 

@@ -1,6 +1,7 @@
 +++
 template = "ensaio.html"
 title = "Suavização de rótulos"
+description = "A suavização de rótulos é uma técnica de regularização que atua controlando a tendência ao excesso de confiança observado em redes neurais profundas."  
 date = 2021-09-15
 updated = 2022-03-15
 [extra]
@@ -58,3 +59,9 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 
 <aside>No livro *Deep Learning* (Goodfellow, Courville, Bengio) dizem que a técnica de suavização dos rótulos.</aside>
+
+## Referências
+
+Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J., & Wojna, Z. (2015). Rethinking the Inception Architecture for Computer Vision. arXiv:1512.00567 [cs]. [link](http://arxiv.org/abs/1512.00567)
+
+

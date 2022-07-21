@@ -8,6 +8,13 @@
     <!-- <p class="subtitle"><strong>{{ page.date }}</strong></p> -->
 
     {{ page.content | safe }}
+
+    {% set data = load_data(path="references.bib", format="bibtex") %}
+    {% set tags = data.bibliographies[0].tags %}
+    This was generated using {{ tags.title }}, authored by {{ tags.author }}.
+    {% for bib in data.bibliographies %}
+        {{ bib.tags.title }}
+    {% endfor %}
 {% endblock content %}
 
 {% block footer %}
