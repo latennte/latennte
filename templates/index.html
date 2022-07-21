@@ -6,4 +6,23 @@
 <h1 class="title">
   This is my blog made with Zola.
 </h1>
+
+<h3>Ensaios</h3>
+
+{% set section = get_section(path="ensaios/_index.md") %}
+<ul>
+  {% for page in section.pages %}
+  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h3>Postagens</h3> 
+
+{% set section = get_section(path="blog/_index.md") %}
+<ul>
+  {% for page in section.pages %}
+  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+
 {% endblock content %}
