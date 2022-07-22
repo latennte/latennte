@@ -65,3 +65,4 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J., & Wojna, Z. (2015). Rethinking the Inception Architecture for Computer Vision. arXiv:1512.00567 [cs]. [link](http://arxiv.org/abs/1512.00567)
 
 
+<!-- {{ biblio(bibfile="content/ensaios/suavizacao_de_rotulos/references.bib") }} -->
