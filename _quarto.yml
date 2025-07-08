@@ -1,0 +1,25 @@
+project:
+  type: website
+
+website:
+  title: "Latennte"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/zgcarvalho
+      - icon: mastodon
+        href: https://sigmoid.social/@zgcarvalho
+      - icon: twitter
+        href: https://twitter.com/zgcarvalho
+   
+format:
+  html:
+    theme: lux
+    css: styles.css
+    include-in-header: 
+      text: |
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+
+

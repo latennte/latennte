@@ -1,0 +1,28 @@
+/* css styles */
+.quarto-title-banner h1{
+    color: #0a0b0b;
+}
+
+.quarto-title-banner {
+    color: #0a0b0b;
+}
+
+.navbar {
+    padding: 0 0;
+}
+
+.navbar-title {
+    color: white;
+    font-family:"Ubuntu";
+    font-size:3rem;
+    font-weight:100;
+    /* color:#0A0B0B; */
+    text-decoration:none;
+    text-transform:none;
+}
+
+.footer {
+    color: #0a0b0b;
+    background: var(--bs-red);
+    padding: 1em 1em;   
+}
